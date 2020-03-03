@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   
 
   resources :students, only: [:index, :new, :create]
-  get '/students/create', to: 'students#create', as: 'new_student' 
+  get '/students/create', to: 'students#create' 
 end
