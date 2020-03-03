@@ -4,12 +4,6 @@ class StudentsController < ApplicationController
     @students = Student.all
   end
   
-  
-
-  def show
-    @student = Student.find(params[:id])
-  end
-  
   def new 
   end 
   
@@ -18,4 +12,9 @@ class StudentsController < ApplicationController
       redirect_to new_student_path 
   end 
 
+  def show
+    @student = Student.find(params[:id])
+  end
+  
+  
 end
