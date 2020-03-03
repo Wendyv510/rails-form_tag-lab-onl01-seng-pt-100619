@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   get '/students/:id', to: 'students#show', as: 'student'
   
 
-  resources :students, only: [:index, :new, :create]
+  resources :students, only: [:index, :create]
   get '/students/create', to: 'students#create' 
 end
